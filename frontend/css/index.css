@@ -1,0 +1,72 @@
+body {
+    background-color: #f2f2f2 !important; /* Fundo cinza claro */
+}
+
+#section-download {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 20vh;
+    width: 800px;
+    height: 600px;
+    border: 1px rgb(197, 189, 189) solid;
+    border-radius: 15px;
+    padding: 100px;
+    background-color: white !important;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#h1-yt-downloader{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#yt-span{
+    color: red;
+    margin-left: 5px;
+}
+
+#paragrafo-yt-downloader{
+    margin-top: -10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    color: rgb(184, 184, 184);
+}
+
+input.form-control{
+    padding: 25px;
+    box-shadow: 0px 0px 5px rgba(255, 0, 0, 0.5);
+    border: none;
+}
+
+.form-control:focus {
+    box-shadow: 0px 0px 5px darkred !important; 
+    transition: 0.2s;
+}
+
+.btn-download {
+    margin: 0 auto;
+    width: 150px;
+    background-color: red !important;
+    color: white !important;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 150px;
+    height: 50px;
+    outline: none;
+    transition: background-color 0.3s, box-shadow 0.3s; 
+}
+
+.btn-download:focus {
+    outline: none;
+}
+
+.btn-download:active {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+
