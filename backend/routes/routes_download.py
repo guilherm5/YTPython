@@ -11,3 +11,7 @@ async def thumbnail_download(video_obj: Video):
 @router.post("/download_midia_youtube")
 async def download_video(video_obj: Video):
     return await download_midia_youtube(video_obj=video_obj)
+
+@router.get("/hello")
+async def hello():
+    return {"hello": "user"}

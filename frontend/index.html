@@ -8,14 +8,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav id="navbar-video" class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#">Download Aúdio</a>
+          <a class="nav-link" href="#">Download <span style="color: red;">Aúdio</span></a>
         </li>
+        
         <li class="nav-item">
-          <a class="nav-link" href="#">Download Thumbanil</a>
+          <a class="nav-link" href="#">Download <span style="color: red;">Thumbnail</span></a>
         </li>
       </ul>
     </div>
@@ -23,13 +24,20 @@
   <form id="form-download">
       <section id="section-download">
           <div class="form-group">
-              <h1 id="h1-yt-downloader">Download vídeo <span id="yt-span"> YouTube</span></h1>
-              <p id="paragrafo-yt-downloader">Baixe vídeos do YouTube gratuitamente</p>
-
-              <input type="text" class="form-control" id="link-youtube" placeholder="Digite o link do vídeo">
-            </div>
-            <button onClick="download_thumbnail()" type="submit" class="btn-download" id="btn-download">Download</button>
+            <h1 id="h1-yt-downloader">Download vídeo <span id="yt-span"> YouTube </span></h1>
+            <p id="paragrafo-yt-downloader">Baixe vídeos do YouTube gratuitamente</p>
+            
+            <input type="text" class="form-control" id="link-youtube" placeholder="Digite o link do vídeo">
+          </div>
+            <button onClick="download_midia()" type="submit" class="btn-download" id="btn-download">Download</button>
           </form>
+          
+        <!-- Overlay de carregamento -->
+        <div id="loading-overlay">
+          <div class="spinner"></div>
+        </div>
+
+          
       </section>
       <script src="js/index.js"></script>
 </body>

@@ -4,13 +4,16 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
-origins = ["*"]
+origins = [
+    "http://127.0.0.1:8000/download_midia_youtube",
+    "http://127.0.0.1:5500"
+]
 
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
     allow_credentials=True,
-    allow_methods=["*"],
+    allow_methods=["POST"],
     allow_headers=["*"],
 )
 
