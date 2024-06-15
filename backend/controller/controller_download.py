@@ -7,13 +7,14 @@ import re
 
 DOWNLOAD_DIR = os.path.expanduser("~/downloads")
 
+
 def clean_filename(filename):
     cleaned_filename = re.sub(r'[\\/*?:"<>|]', '_', filename)
     return cleaned_filename
 
 # Função para definir path e diretorio de download da thumbnail
 def download_file_path(url_video: str, filename: str, ext: str) -> str:
-    path = os.path.join(DOWNLOAD_DIR, clean_filename(filename) + ext) # Funcao clean_filename limpa o nome do video baixado, para nao ocorrer erros no windows
+    path = os.path.join( clean_filename(filename) + ext) # Funcao clean_filename limpa o nome do video baixado, para nao ocorrer erros no windows
     urllib.request.urlretrieve(url_video, path)
     return path
 
